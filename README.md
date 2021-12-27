@@ -1,3 +1,9 @@
-# Headline
+# Welcome
 
-> An awesome project.
+> init
+
+docsify init ./your folder
+
+> start
+
+docsify serve --port=8888
