@@ -54,7 +54,6 @@ interface Test {
      void show(String msg);
 }
 Test t = msg -> System.out.println(msg);
-
 ```
 
 2. 如果方法体中唯一的一条语句，是一个返回语句的时候，在省略大括号的同时，return也必须省略
