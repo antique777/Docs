@@ -46,7 +46,9 @@ class Person implements Comparable<Person> {
 }
 ```
 ### Comparator排序
+
 1. 新建Comparator比较器
+
 ```java
 public class ListSortExample2 {
     public static void main(String[] args) {
@@ -64,15 +66,15 @@ public class ListSortExample2 {
         });
     }
 }
-/**
- * 新建 Person 比较器
- */
+
+//新建 Person 比较器
 class PersonComparator implements Comparator<Person> {
     @Override
     public int compare(Person p1, Person p2) {
         return p2.getAge() - p1.getAge();
     }
 }
+
 @Getter
 @Setter
 @ToString
@@ -88,7 +90,9 @@ class Person {
     }
 }
 ```
-2. 
+
+2. 匿名内部类实现
+
 ```java
 public class ListSortExample2 {
     public static void main(String[] args) {
@@ -111,6 +115,7 @@ public class ListSortExample2 {
         });
     }
 }
+
 @Getter
 @Setter
 @ToString
@@ -125,8 +130,11 @@ class Person {
     }
 }
 ```
+
 ### Stream流排序
+
 1. 常规
+
 ```java
 public class ListSortExample3 {
     public static void main(String[] args) {
@@ -144,6 +152,7 @@ public class ListSortExample3 {
             System.out.println(p);
         });
     }
+
     @Getter
     @Setter
     @ToString
@@ -159,9 +168,11 @@ public class ListSortExample3 {
     }
 }
 ```
+
 2. 第1种字段出现null会报异常，解决方案
 
 `nullsFirst` , `nullsLast`
+
 ```java
 public class ListSortExample4 {
     public static void main(String[] args) {
@@ -194,4 +205,4 @@ class Person {
         this.name = name;
     }
 }
-```java
+```
