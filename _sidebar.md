@@ -1,6 +1,6 @@
 - [**Java 8**](java8)
-- **--** 
-    - [1](data-monitor)
+- [**Java常识**](javaBase) 
+    - [List排序的三种方式](list-sort)
     - [2](statistics)
     - [3](product)
     - [4](channel)
