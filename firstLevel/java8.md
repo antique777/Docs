@@ -208,7 +208,30 @@ class Person {
 > 在接口里面有了一个实现的方法
 
 ## Stream API
-> 函数式编程风格
+> 函数式编程风格 , 以声明的方式处理数据
+> Stream使用一种类似SQL语句从数据库查询数据的直观方式来提供一种对java集合运算和表达的高阶抽象
+> Stream（流）是一个来自数据源的元素列表并支持聚合操作
+>   - 元素是特定类型的对象，形成一个队列。Java中的Stream并不会存储元素，而是按需计算
+>   - *数据源*：流的来源。可以是集合，数组，I/O channel，产生器generator等
+>   - *聚合操作*： 类似SQL语句一样的操作，比如filter，map，reduce，find，match，sorted等
+> 基础特征：
+>   - *Pipelining* ：中间操作都会返回流对象本身，这样多个操作可以串联成一个管道，如同流式风格（fluent style）。这样做可以对操作进行优化，比如延迟执行和短路
+>   - *内部迭代*：以前对集合遍历都是通过iterator或for-each的方式，显式的在集合外部进行迭代，这叫外部迭代。Stream提供了内部迭代的方式，通过访问模式（visitor）实现
+
+### forEach
+ Stream提供了新的方法`forEach`来迭代流中的每个数据，
+
+ ```java
+
+    Random randomm = new Random();
+    random.ints.kimit10.foreach(System.out::printm)
+ ```
+
+### map
+map方法用于映射每个元素到对应的结果
+```java
+// 输出元素的对应的平方数
+```
 
 ## Date Time API
 > 加强对日期与时间的处理
