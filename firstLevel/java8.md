@@ -1,5 +1,7 @@
 # Java8特性
 
+
+
 ## lambda
 > 允许把函数作为一个方法的参数<br>
 > 一个匿名方法<br>
@@ -219,12 +221,12 @@ class Person {
 >   - *内部迭代*：以前对集合遍历都是通过iterator或for-each的方式，显式的在集合外部进行迭代，这叫外部迭代。Stream提供了内部迭代的方式，通过访问模式（visitor）实现
 
 ### forEach
- Stream提供了新的方法`forEach`来迭代流中的每个数据，
+ Stream提供了新的方法`forEach`来迭代流中的每个数据， 
 
  ```java
 
     Random randomm = new Random();
-    random.ints.kimit10.foreach(System.out::printm)
+    random.ints.kimit10.foreach(System.out::println)
  ```
 
 ### map
