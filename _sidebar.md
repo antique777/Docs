@@ -5,6 +5,8 @@
     - [跨域问题](javaBase/跨域问题)
 - [**多线程**](firstLevel/threads)
 - [**Utils**](firstLevel/utils)
+- [**Java插件**](firstLevel/plugin)
+    - [**pagehelper**](plugins/pagehelper)
 - [**文档工具**](firstLevel/docUtil)
     - [**smart-doc**](docUtils/smart-doc)
 - [**非工作**](firstLevel/notWork)
