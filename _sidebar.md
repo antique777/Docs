@@ -5,6 +5,7 @@
     - [跨域问题](javaBase/跨域问题)
 - [**多线程**](firstLevel/threads)
 - [**Utils**](firstLevel/utils)
-
-- [**非工作**](firstLevel/notWork.md)
-    - [**MarkDown**](markdown/markdownShare.md)
+- [**文档工具**](firstLevel/docUtil)
+    - [**smart-doc**](docUtils/smart-doc)
+- [**非工作**](firstLevel/notWork)
+    - [**MarkDown**](markdown/markdownShare)
