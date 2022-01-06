@@ -10,3 +10,7 @@
     - [**smart-doc**](plugins/smart-doc)
 - [**非工作**](firstLevel/notWork)
     - [**MarkDown**](markdown/markdownShare)
+- [**python**](firstLevel/python)
+    - [**常规**](python/general)
+- [**go**](firstLevel/go)
+    - [常规](go/general)
