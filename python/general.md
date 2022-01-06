@@ -121,3 +121,82 @@ print(r'hello\nrunoob')     # 在字符串前面添加一个 r，表示原始字
 空行与代码缩进不同，空行并不是 Python 语法的一部分。书写时不插入空行，Python 解释器运行也不会出错。但是空行的作用在于分隔两段不同功能或含义的代码，便于日后代码的维护或重构。  
 
 **空行也是程序代码的一部分**
+
+
+### 同一行显示多条语句
+Python 可以在同一行中使用多条语句，语句之间使用分号 `;` 分割
+#!/usr/bin/python3  
+ 
+import sys; x = 'runoob'; sys.stdout.write(x + '\n')
+
+### 多个语句构成代码组
+缩进相同的一组语句构成一个代码块，我们称之代码组。  
+像if、while、def和class这样的复合语句，首行以关键字开始，以冒号( : )结束，该行之后的一行或多行代码构成代码组。  
+我们将首行及后面的代码组称为一个子句(clause)。  
+```python
+if expression : 
+   suite
+elif expression : 
+   suite 
+else : 
+   suite
+```
+
+### print输出
+print 默认输出是换行的，如果要实现不换行需要在变量末尾加上` end=""`
+```python
+#!/usr/bin/python3
+ 
+x="a"
+y="b"
+# 换行输出
+print( x )
+print( y )
+ 
+print('---------')
+# 不换行输出
+print( x, end=" " )
+print( y, end=" " )
+print()
+```
+
+### import 与 from...import
+在 python 用 `import` 或者 `from...import` 来导入相应的模块。
+将整个模块(somemodule)导入，格式为： `import somemodule`
+从某个模块中导入某个函数,格式为： `from somemodule import somefunction`
+从某个模块中导入多个函数,格式为：` from somemodule import firstfunc, secondfunc, thirdfunc`
+将某个模块中的全部函数导入，格式为：` from somemodule import *`
+
+```python
+# 导入sys模块
+
+import sys
+print('================Python import mode==========================')
+print ('命令行参数为:')
+for i in sys.argv:
+    print (i)
+print ('\n python 路径为',sys.path)
+```
+
+```python
+# 导入 sys 模块的 argv,path 成员
+
+from sys import argv,path  #  导入特定的成员
+ 
+print('================python from import===================================')
+print('path:',path) # 因为已经导入path成员，所以此处引用时不需要加sys.path
+```
+
+### 命令行参数
+很多程序可以执行一些操作来查看一些基本信息，Python可以使用-h参数查看各参数帮助信息：
+```
+$ python -h
+usage: python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Options and arguments (and corresponding environment variables):
+-c cmd : program passed in as string (terminates option list)
+-d     : debug output from parser (also PYTHONDEBUG=x)
+-E     : ignore environment variables (such as PYTHONPATH)
+-h     : print this help message and exit
+
+[ etc. ]
+```
