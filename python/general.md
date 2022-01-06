@@ -23,6 +23,8 @@ Python3中，可以用中文作为变量名，非ASCII标识符也允许
 ```
 
 ### 注释
+单行注释以 `#` 开头  
+多行注释用三个单引号` '''` 或者三个双引号` """ `将注释括起来  
 ```python
 #!/usr/bin/python3
  
@@ -156,7 +158,7 @@ print( y )
 print('---------')
 # 不换行输出
 print( x, end=" " )
-print( y, end=" " )
+print( y, end="," )
 print()
 ```
 
