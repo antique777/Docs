@@ -8,6 +8,7 @@
 - [**插件**](firstLevel/plugin)
     - [**pagehelper**](plugins/pagehelper)
     - [**smart-doc**](plugins/smart-doc)
+    - [**性能监控**](plugins/monitor)
 - [**非工作**](firstLevel/notWork)
     - [**MarkDown**](markdown/markdownShare)
 - [**python**](firstLevel/python)
