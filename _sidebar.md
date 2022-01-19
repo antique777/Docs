@@ -1,6 +1,7 @@
 - [**Java 8**](firstLevel/java8)
 - [**Java常识**](firstLevel/javaBase) 
     - [List排序的三种方式](javaBase/list-sort)
+    - [for和foreach区别](javaBase/forAndForeach)
     - [字符串拼接](javaBase/String-append)
     - [跨域问题](javaBase/跨域问题)
 - [**多线程**](firstLevel/threads)
